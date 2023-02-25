@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dialog open>
+      <h1>Project-02</h1>
+    </dialog>
+    <form>
+      <div>
+        <label
+          for="name"
+          style="
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+          "
+          >Full Nmae</label
+        >
+
+        <div>
+          <label for="age">Age</label>
+          <input type="number" min="20" max="150" />
+        </div>
+
+        <div>
+          <label for="image">Image</label>
+          <input type="file" name="" id="" accept="image/png, image/jpeg",
+          image/svg>
+        </div>
+
+        <div>
+          <label for="fuel">Fuel</label>
+          <meter
+            id="fuel"
+            min="0"
+            max="100"
+            low="33"
+            high="66"
+            optimum="80"
+            value="50"
+          >
+            at 50/100
+          </meter>
+        </div>
+
+        <input
+          type="text"
+          id="name"
+          required
+          placeholder="Dhruv Prajapati"
+          aria-label="Full name"
+          maxlength="10"
+        />
+      </div>
+
+      <div>
+        <label for="email">email</label>
+        <input
+          type=" text"
+          id="email"
+          placeholder="email"
+          autocomplete="email"
+          pattern="\w@gmail.com"
+        />
+      </div>
+
+      <div>
+        <label for="phone">phone</label>
+        <input type="phone" id="phone" placeholder="phone" autocomplete="tel" />
+      </div>
+
+      <div>
+        <label for="search">search</label>
+        <input type="search" />
+      </div>
+
+      <div>
+        <input type="color" />
+      </div>
+
+      <div>
+        <label for="Password">Password</label>
+        <input type="password" autocomplete="current-password" />
+      </div>
+
+      <div>
+        <label for="new-Password">new-Password</label>
+        <input type="password" id="new-Password" autocomplete="new-password" />
+      </div>
+
+      <div>
+        <label for="confirm-Password">confirm-Password</label>
+        <input
+          type="password"
+          id="confi-Password"
+          autocomplete="confirm-password"
+        />
+      </div>
+
+      <div>
+        <label for="birth-date">Birth-Date</label>
+        <input type="date" id="birth-date" autocomplete="bday" />
+      </div>
+
+      <div>
+        <label for="birth-date">Birth-Date</label>
+        <input type="time" id="birth-date" />
+      </div>
+
+      <div>
+        <label for="birth-date">Birth-Date</label>
+        <input type="datetime-local" id="birth-date" />
+      </div>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select name="" id="" multiple>
+          <option value="">Please enter a gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <label for="male">male</label>
+          <input type="radio" id="male" name="gender" />
+        </div>
+        <div>
+          <label for="female">female</label>
+          <input type="radio" id="female" name="gender" />
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select name="" id="">
+          <option value="">Please enter a gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="college">college</label>
+        <input type="text" id="college" list="college-list" />
+        <datalist id="college-list">
+          <option value="Nirma">Nirma</option>
+          <option>LDRP</option>
+          <option>SAL</option>
+        </datalist>
+      </div>
+
+      <!-- <div>
+            <label for="hobbies">Hobbies</label>
+            <select name="" id="">
+                <optgroup title="sports">
+                    <option value="criket">Criket</option>
+                    <option value="chess">Chess</option>
+                </optgroup>
+
+                <optgroup title="activity">
+                    <option value="dance">Dance</option>
+                    <option value="singing">Singing</option>
+                </optgroup>
+            </select>
+        </div>-->
+
+      <!--  <div>
+            <label for="collage">Collage</label>
+            <input type="text" id="collage" list="collage-list">
+             <dataalist id="collage-list">
+                <option value="Silveroak University">Silveroak University</option>
+                <option value="Nirma">Nirma</option>
+                <option value="LDRP">LDRP</option>
+                <option value="LJ">LJ</option>
+                
+             </dataalist>
+            
+        </div>-->
+
+      <fieldset>
+        <legend>Hobbies</legend>
+        <div>
+          <label for="criket">criket</label>
+          <input type="checkbox" name="hobbies" id="criket" name="Hobbies" />
+        </div>
+        <div>
+          <label for="chess">chess</label>
+          <input type="checkbox" name="hobbies" id="chess" name="Hobbies" />
+        </div>
+      </fieldset>
+
+      <textarea name="" id="" cols="10" rows="5"></textarea>
+
+      <button type="submit">submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
